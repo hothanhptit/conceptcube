@@ -1,7 +1,13 @@
 import React from "react";
 
 const Footer = () => {
-    
+  function SocialMedia(props) {
+    return (
+      <a href="#" className="social-media-icon">
+        <img src={props.icon} alt="" />
+      </a>
+    );
+  }
   return (
     <div>
       <div className="footer">
@@ -58,15 +64,9 @@ const Footer = () => {
           </p>
         </span>
         <div className="social-media-link">
-          <a href="#" className="social-media-icon">
-            <img src="/images/snsicon-01.png" alt="" />
-          </a>
-          <a href="#" className="social-media-icon">
-            <img src="/images/snsicon-02.png" alt="" />
-          </a>
-          <a href="#" className="social-media-icon">
-            <img src="/images/snsicon-03.png" alt="" />
-          </a>
+            <SocialMedia icon={`/images/snsicon-01.png`} />
+            <SocialMedia icon={`/images/snsicon-02.png`} />
+            <SocialMedia icon={`/images/snsicon-02.png`} />
         </div>
       </div>
     </div>

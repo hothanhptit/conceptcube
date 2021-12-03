@@ -117,6 +117,7 @@ menu,
 nav,
 section {
   display: block;
+  /* overflow-x: hidden; */
 }
 body {
   line-height: 1;
@@ -133,14 +134,16 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+#root {
+  overflow-x: hidden;
+}
 
 :root {
   --black: #1a1a1a;
@@ -179,20 +182,11 @@ table {
   --dark-maroon: #020001;
   --white: #fff;
   --black-three: #222;
-
-  --spacing-xxs: 4px;
-  --spacing-xs: 8px;
-  --spacing-s: 12px;
-  --spacing-m: 16px;
-  --spacing-l: 20px;
-  --spacing-xl: 24px;
-  --spacing-xxl: 28px;
-  --spacing-xxl-2: 32px;
 }
 
 .Text-Style-18 {
   font-family: Montserrat;
-  font-size: 171.5px;
+  font-size: 10.719rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -203,7 +197,7 @@ table {
 }
 .Text-Style-13 {
   font-family: Montserrat;
-  font-size: 171.5px;
+  font-size: 10.719rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -214,7 +208,7 @@ table {
 }
 .Text-Style-4 {
   font-family: NotoSans;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -225,7 +219,7 @@ table {
 }
 .Text-Style-25 {
   font-family: Montserrat;
-  font-size: 55px;
+  font-size: 3.438rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -236,18 +230,18 @@ table {
 }
 .Text-Style-19 {
   font-family: Montserrat;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
-  letter-spacing: 5px;
+  letter-spacing: 0.313rem;
   text-align: left;
   color: var(--white);
 }
 .Text-Style-12 {
   font-family: Montserrat;
-  font-size: 50px;
+  font-size: 0.313rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: italic;
@@ -258,40 +252,40 @@ table {
 }
 .Text-Style-5 {
   font-family: Montserrat;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
-  letter-spacing: 5px;
+  letter-spacing: 0.313rem;
   text-align: center;
   color: var(--bright-orange);
 }
 .Text-Style-3 {
   font-family: Montserrat;
-  font-size: 45px;
+  font-size: 2.813rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.33;
-  letter-spacing: 4.5px;
+  letter-spacing: 0.281rem;
   text-align: left;
   color: var(--sun-yellow);
 }
 .Text-Style-23 {
   font-family: Montserrat;
-  font-size: 45px;
+  font-size: 2.813rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.33;
-  letter-spacing: 4.5px;
+  letter-spacing: 0.31rem;
   text-align: left;
   color: var(--dark-brown);
 }
 .Text-Style-2 {
   font-family: NotoSans;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -302,7 +296,7 @@ table {
 }
 .Text-Style-24 {
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -313,7 +307,7 @@ table {
 }
 .Text-Style-17 {
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -324,7 +318,7 @@ table {
 }
 .Text-Style-22 {
   font-family: Montserrat;
-  font-size: 25px;
+  font-size: 1.563rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -335,7 +329,7 @@ table {
 }
 .Text-Style-14 {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -346,7 +340,7 @@ table {
 }
 .Text-Style-20 {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -356,7 +350,7 @@ table {
 }
 .Text-Style {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -366,7 +360,7 @@ table {
 }
 .Text-Style-6 {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -377,7 +371,7 @@ table {
 }
 .Text-Style-16 {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -388,7 +382,7 @@ table {
 }
 .Text-Style-21 {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -399,7 +393,7 @@ table {
 }
 .Text-Style-7 {
   font-family: NotoSans;
-  font-size: 17.5px;
+  font-size: 1.094rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -410,7 +404,7 @@ table {
 }
 .Text-Style-8 {
   font-family: NotoSans;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -421,7 +415,7 @@ table {
 }
 .Text-Style-9 {
   font-family: NotoSans;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -432,7 +426,7 @@ table {
 }
 .Text-Style-10 {
   font-family: NotoSans;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -443,7 +437,7 @@ table {
 }
 .Text-Style-15 {
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -454,7 +448,7 @@ table {
 }
 .Text-Style-11 {
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -465,7 +459,7 @@ table {
 }
 .Text-Style-26 {
   font-family: NotoSansCJKkr;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -478,8 +472,8 @@ table {
 /* nav */
 .navbar {
   width: 100vw;
-  height: 80px;
-  padding: 24px 120px 27px 97px;
+  height: 6vh;
+  padding: 1.5rem 7.5rem 1.688rem 6.063rem;
   background-color: var(--black-two);
   display: flex;
   flex-direction: row;
@@ -488,25 +482,18 @@ table {
 .nav-item {
   color: var(--white);
   text-decoration: none;
-  padding: 2px 16px 0 16px;
-  /* justify-content: space-between; */
+  padding: 0.125rem 1rem 0 1rem;
 }
 .nav-item > li {
   list-style: none;
-  height: 11px;
-  font-size: 14px;
+  height: 0.688rem;
+  font-size: 0.875rem;
 }
-/* .nav-button > a {
-
-} */
 .nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-
-
 
 /* banner */
 .banner {
@@ -514,8 +501,8 @@ table {
   flex-direction: column;
   font-size: 0px;
 }
-.main-banner >img {
-  width:100vw;
+.main-banner > img {
+  width: 100vw;
 }
 .introduction-bg {
   width: 100vw;
@@ -528,25 +515,25 @@ table {
 .intro-desc {
   position: absolute;
   z-index: 1;
-  top: 174px;
-  left: 173px;
+  top: 10.875rem;
+  left: 10.813rem;
   transform: translatFeY(-50%);
 }
 
 .Text-Style-19 {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .Text-Style-6 {
-  width: 667px;
-  height: 125px;
+  width: 41.688rem;
+  height: 7.813rem;
   line-height: 1.75;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .best-product {
   position: relative;
@@ -554,85 +541,85 @@ table {
 .bes-bg {
   position: relative;
 }
-.bes-bg >img {
+.bes-bg > img {
   width: 100vw;
 }
 .bes-text {
   position: absolute;
-  top: 150px;
-  left: 627px;
+  /* z-index: 10; */
+  /* text-align: center; */
+  top: 9.375rem;
+  left: 39rem;
 }
 .Text-Style-5 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .Text-Style-16 {
-  width: 700px;
-  font-size: 20px;
+  width: 43.75rem;
+  font-size: 1.25rem;
 }
-
 
 .product-intro {
   position: absolute;
-  top: 362px;
-  left: 176px;
+  top: 22.625rem;
+  left: 11rem;
   display: flex;
   flex-wrap: wrap;
   width: 81.82vw;
 }
 .product-item {
+  /* display: flex; */
+  /* flex-direction: row; */
   position: relative;
   width: 33.33%;
 }
-/* .product-img{
-  width: 523px;
-  height: 514px;
-  object-fit: contain;
-} */
+
 .product-icon {
   position: absolute;
-  width: 92px;
-  height: 92px;
-  top: -46px;
+  width: 5.75rem;
+  height: 5.75rem;
+  top: -2.875rem;
   left: 0;
   z-index: 99;
 }
 
 .product-desc {
-  width: 360px;
-  height: 79px;
+  width: 22.5rem;
+  height: 5rem;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  left: 70px;
-  bottom: -38.5px;
+  left: 4.375rem;
+  bottom: -2.375rem;
 }
 .Text-Style-20 {
-  margin: 15px 0 15px 27px;
-  font-size: 18px;
+  margin: 1rem 0 1rem 1.688rem;
+  font-size: 1.125rem;
   line-height: 1.25;
-  width: 188px;
-  height: 44px;
+  width: 11.75rem;
+  height: 2.75rem;
 }
 .product-more {
   cursor: pointer;
 }
 .img-icon {
-  width: 60px;
-  height: 60px;
-  margin-top: 4px;
-  margin-right: 4px;
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
 }
+
 /* product */
 .item-like {
   color: var(--black-three);
 }
 
 .card {
-  margin: 175px;
+  margin: 10.875rem;
   margin-bottom: 0px;
   display: flex;
   justify-content: space-between;
@@ -641,13 +628,13 @@ table {
 }
 
 .card-item {
-  width: calc(20% - 18px);
+  width: calc(20% - 1.125rem);
 }
 
 .card-title {
-  font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  font-size: 1.125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   font-weight: 600;
   line-height: 1.94;
 }
@@ -656,36 +643,296 @@ table {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-top: 31px;
-  margin-bottom: 64px;
-  /* margin: 31px 80px 7px 133px; */
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 .btn-wrap {
   text-align: center;
-  margin: 100px;
+  margin: 6.25rem;
 }
 .see-more-btn {
-  width: 200px;
-  height: 60px;
+  width: 12.5rem;
+  height: 3.75rem;
   font-weight: 900;
-  border: solid 3px var(--dark-maroon);
+  border: solid 0.13rem var(--dark-maroon);
   background-color: var(--white);
   color: var(--black-three);
   text-align: center;
 }
-.product-like{
-  margin-bottom: 10px;
+.product-like {
+  margin-bottom: 0.625rem;
 }
 .heart-icon {
-  margin-right: 7px;
+  margin-right: 0.438rem;
   margin-left: auto;
   justify-content: flex-end;
 }
 
+/* brandstory */
+.brand-story {
+  margin: 0;
+  /* padding: vh; */
+  box-sizing: border-box;
+  position: inherit;
+  width: 100vw;
+}
+.brand {
+  background-color: #0565bb;
+  height: 59.75rem;
+  width: 100%;
+  position: relative;
+  /* padding-bottom: 0; */
+}
+.brand-img-01 {
+  position: absolute;
+  top: 4rem;
+  right: 16rem;
+}
+.brand-img-02 {
+  position: absolute;
+  top: 7.125rem;
+  right: 10.688rem;
+  z-index: 2;
+}
+.brand-img-03 {
+  position: absolute;
+  top: 11.438rem;
+  left: 10.625rem;
+}
+.brand-img-04 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.brand-img-05 {
+  position: absolute;
+  top: 34.375rem;
+  z-index: 1;
+  left: 12rem;
+}
+.brand-wrap {
+  position: absolute;
+  width: 12.5rem;
+  height: 31.25rem;
+  top: 12rem;
+  right: 0;
+  overflow: hidden;
+}
+.brand-img-07 {
+  width: 18.75rem;
+  height: 100%;
 
+  object-fit: contain;
+}
+.brand-img-06 {
+  position: absolute;
+  top: 36rem;
+  right: 0;
+  z-index: 2;
+}
+#hiden {
+  overflow: hidden;
+}
+.brand-title {
+  text-transform: uppercase;
+  font-size: 2.813rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fcd32a;
+  padding-top: 9.375rem;
+  margin-bottom: 2.5rem;
+}
+.brand-desc {
+  color: #fcd32a;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.88;
+  text-align: center;
+}
+.brand-desc-01 {
+  color: #fcd32a;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.88;
+  text-align: center;
+  margin-bottom: 4.375rem;
+}
+.brand-main-img {
+  display: block;
+  /* width: 51%; */
+  width: 38.25rem;
+  height: 26.125rem;
+  z-index: 22;
+}
+.brand-row {
+  width: 77.313rem;
+  height: 1.5rem;
+  background-color: var(--dark-maroon);
+  margin-left: 20.8rem;
+  position: relative;
+}
+
+.brand-row::after {
+  content: "";
+  position: absolute;
+  width: 76.75rem;
+  height: 0.563rem;
+  top: 0.344rem;
+  left: 0.25rem;
+  background-color: var(--dark-maroon);
+  border-top: 0.125rem solid #0565bb;
+  border-bottom: 0.125rem solid #0565bb;
+}
+.brand-main {
+  max-width: 78.125rem;
+  display: flex;
+  align-items: center;
+  margin-left: 20.813rem;
+}
+
+.brand-text {
+  width: 50%;
+  height: 26.125rem;
+  background-color: var(--white);
+  border-left: none;
+  z-index: 2;
+  font-family: Montserrat;
+}
+.brand-text-title {
+  text-transform: uppercase;
+  font-size: 1.563rem;
+  padding: 1.25rem 0;
+  padding-left: 1.25rem;
+}
+.brand-text-desc {
+  padding-left: 1.25rem;
+  width: 33rem;
+}
+.brand-button {
+  cursor: pointer;
+  width: 12.5rem;
+  height: 3.75rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--black-three);
+  padding: 1.25rem 1.25rem;
+  border: solid 0.188 var(--dark-maroon);
+  background-color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  display: inline-block;
+}
+* {
+  box-sizing: border-box;
+}
+
+.what {
+  height: auto;
+  margin-top: 6.25rem;
+  position: relative;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+.what-title {
+  text-transform: uppercase;
+  font-size: 2.813rem;
+  font-weight: 800;
+  text-align: center;
+  font-size: 3.125rem;
+  letter-spacing: 0.625rem;
+  color: var(--black-two);
+  padding-top: 9.375rem;
+  margin-bottom: 2.5rem;
+  font-family: Montserrat;
+  /* overflow: hidden; */
+}
+.what-desc {
+  font-size: 1.25rem;
+  font-family: Montserrat;
+  font-weight: normal;
+  line-height: 1.88;
+  text-align: center;
+}
+.what-desc-01 {
+  /* font-size: 1.25rem; */
+  font-family: Montserrat;
+  color: var(--black-two);
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.88;
+  text-align: center;
+  margin-bottom: 4.375rem;
+}
+
+.what-main {
+  text-align: center;
+  margin-top: 5.625rem;
+}
+.what-img-01 {
+  position: absolute;
+  top: 18.75rem;
+  left: -17.5%;
+  width: 100%;
+  height: 100%;
+}
+.what-img-02 {
+  position: absolute;
+  top: 43.75rem;
+  right: 0;
+  width: 10.875rem;
+  z-index: -99;
+  /* width: 100%; */
+  overflow: hidden;
+  /* width: 12.5rem; */
+}
+.what-img-03 {
+  /* width: 100%; */
+  overflow: hidden;
+  width: 12.5rem;
+  position: absolute;
+  top: 60rem;
+  right: 0;
+  width: 24.688rem;
+  z-index: -1;
+}
+.img-03 {
+  overflow: hidden;
+}
+.img-02 {
+  overflow: hidden;
+}
+.img-04 {
+  position: absolute;
+  top: 10rem;
+  right: 9.125rem;
+}
+.img-05 {
+  position: absolute;
+  top: 16.875rem;
+  right: 15.313rem;
+  z-index: 2;
+}
+
+.img-07 {
+  position: absolute;
+  top: 84.375rem;
+  left: 13.938rem;
+  z-index: -10;
+}
+.img-06 {
+  position: absolute;
+  top: 90.625rem;
+  left: 21.25rem;
+}
+.img-08 {
+  position: absolute;
+  top: 85.625rem;
+  right: 43.438rem;
+}
 /* footer */
 .footer {
-  /* position: fixed; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -694,7 +941,7 @@ table {
   margin: 348px 0 0;
   padding: 0px 99px 0px;
   background-color: var(--white);
-  border-top: solid 1px var(--white-three);;
+  border-top: solid 1px var(--white-three);
 }
 .contact-info {
   display: flex;
@@ -733,7 +980,7 @@ table {
 }
 
 .about-company {
-  border-top: solid 1px var(--white-three);;
+  border-top: solid 1px var(--white-three);
   display: flex;
   flex-direction: row;
   text-align: right;
@@ -755,260 +1002,89 @@ table {
 .social-media-link {
   margin: 27px 100px 123px;
   justify-content: flex-end;
-  
 }
 .social-media-icon {
   margin-left: 24px;
   /* padding: auto 50px ; */
 }
+/* responsive  */
 
-/* brandstory */
-.brand-story {
-  margin: 0;
-  /* padding: vh; */
-  box-sizing: border-box;
-  position: inherit;
+@media only screen and (max-width: 1850px) {
+  .card-item {
+    width: calc(25% - 3rem);
+  }
+  .card-bottom {
+    margin: 1rem 1.5rem 3rem 0;
+  }
+  .product-item {
+    width: 33.333%;
+  }
+  .product-img {
+    width: 95%;
+  }
+  .product-desc {
+    width: 60%;
+  }
 }
-.brand {
-  background-color: #0565bb;
-  height: 956px;
-  width: 100%;
-  position: relative;
-  /* padding-bottom: 0; */
+@media only screen and (max-width: 1600px) {
+  .card-item {
+    width: calc(33% - 3rem);
+  }
+  .card-bottom {
+    margin: 1rem 1.5rem 3rem 0;
+  }
+  .product-img {
+    width: 90%;
+  }
+  .product-desc {
+    width: 90%;
+  }
+  .bes-text {
+    top: 6rem;
+    left: 25rem;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .more-info {
+    padding-right: 0rem;
+    align-items: left;
+  }
+  .address {
+    padding-top: 10rem;
+  }
+  .social-media-link {
+    padding-top: 10rem;
+  }
+  .product-desc {
+    width: 60%;
+    font-size: .75rem;
+    /* line-height: 2; */
+  }
+  .Text-Style-19 {
+    font-size: 3rem;
+  }
+  .Text-Style-6 {
+    font-size: 1rem;
+  }
 }
-.brand-img-01 {
-  position: absolute;
-  top: 61px;
-  right: 256px;
+@media only screen and (max-width: 1200px) {
+  .card-item {
+    width: calc(50% - 3rem);
+  }
+  .card-bottom {
+    /* margin: inherit; */
+    /* margin-right: 1.5rem; */
+    margin: 1rem 4.25rem 3rem 0;
+  }
 }
-.brand-img-02 {
-  position: absolute;
-  top: 114px;
-  right: 171px;
-  z-index: 2;
+@media only screen and (max-width: 768px) {
+  .card-item {
+    width: 100%;
+  }
+  .card-bottom {
+    /* margin: inherit; */
+    /* margin-right: 1.5rem; */
+    margin: 1rem 4.25rem 3rem 0;
+  }
 }
-.brand-img-03 {
-  position: absolute;
-  top: 183px;
-  left: 169px;
-}
-.brand-img-04 {
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-.brand-img-05 {
-  position: absolute;
-  top: 550px;
-  z-index: 1;
-  left: 192px;
-}
-.brand-wrap {
-  position: absolute;
-  width: 200px;
-  height: 500px;
-  top: 190px;
-  right: 0;
-  overflow: hidden;
-}
-.brand-img-07 {
-  width: 300px;
-  height: 100%;
-
-  object-fit: contain;
-}
-.brand-img-06 {
-  position: absolute;
-  top: 575px;
-  right: 0;
-  z-index: 2;
-}
-#hiden {
-  overflow: hidden;
-}
-.brand-title {
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: bold;
-  text-align: center;
-  color: #fcd32a;
-  padding-top: 150px;
-  margin-bottom: 40px;
-}
-.brand-desc {
-  color: #fcd32a;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.88;
-  text-align: center;
-}
-.brand-desc-01 {
-  color: #fcd32a;
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.88;
-  text-align: center;
-  margin-bottom: 70px;
-}
-.brand-main-img {
-  display: block;
-  width: 612px;
-  height: 418px;
-  z-index: 22;
-}
-.brand-row {
-  width: 1237px;
-  height: 24px;
-  background-color: var(--dark-maroon);
-  margin-left: 333px;
-  position: relative;
-}
-
-.brand-row::after {
-  content: '';
-  position: absolute;
-  width: 1228px;
-  height: 9px;
-  top: 5.5px;
-  left: 4px;
-  background-color: var(--dark-maroon);
-  border-top: 2px solid #0565bb;
-  border-bottom: 2px solid #0565bb;
-}
-.brand-main {
-  max-width: 1250px;
-  display: flex;
-  align-items: center;
-  margin-left: 333px;
-}
-
-.brand-text {
-  width: 50%;
-  height: 418px;
-  /* border: solid 3px var(--dark-maroon); */
-  background-color: var(--white);
-  border-left: none;
-  z-index: 2;
-  font-family: Montserrat;
-}
-.brand-text-title {
-  text-transform: uppercase;
-  font-size: 25px;
-  padding: 20px 0;
-  padding-left: 20px;
-}
-.brand-text-desc {
-  padding-left: 20px;
-  width: 528px;
-}
-.brand-button {
-  cursor: pointer;
-  width: 200px;
-  height: 60px;
-  font-weight: 900;
-  text-align: center;
-  color: var(--black-three);
-  padding: 20px 20px;
-  border: solid 3px var(--dark-maroon);
-  background-color: var(--white);
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 20px;
-  margin-top: 20px;
-  display: inline-block;
-}
-* {
-  box-sizing: border-box;
-}
-
-.what {
-  height: auto;
-  margin-top: 100px;
-  position: relative;
-}
-.what-title {
-  text-transform: uppercase;
-  font-size: 45px;
-  font-weight: 800;
-  text-align: center;
-  font-size: 50px;
-  letter-spacing: 10px;
-  color: var(--black-two);
-  padding-top: 150px;
-  margin-bottom: 40px;
-  font-family: Montserrat;
-}
-.what-desc {
-  font-size: 20px;
-  font-family: Montserrat;
-  font-weight: normal;
-  line-height: 1.88;
-  text-align: center;
-}
-.what-desc-01 {
-  /* font-size: 20px; */
-  font-family: Montserrat;
-  color: var(--black-two);
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.88;
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.what-main {
-  text-align: center;
-  margin-top: 90px;
-}
-.what-img-01 {
-  position: absolute;
-  top: 300px;
-  left: -17.5%;
-  width: 100%;
-  height: 100%;
-}
-.what-img-02 {
-  position: absolute;
-  top: 700px;
-  right: 0;
-  width: 175px;
-  z-index: -99;
-}
-.what-img-03 {
-  position: absolute;
-  top: 960px;
-  right: 0;
-  width: 395px;
-  z-index: -1;
-}
-.img-04 {
-  position: absolute;
-  top: 160px;
-  right: 146px;
-}
-.img-05 {
-  position: absolute;
-  top: 270px;
-  right: 244px;
-  z-index: 2;
-}
-
-.img-07 {
-  position: absolute;
-  top: 1300px;
-  left: 223px;
-  z-index: -10;
-}
-.img-06 {
-  position: absolute;
-  top: 1400px;
-  left: 340px;
-}
-.img-08 {
-  position: absolute;
-  top: 1370px;
-  right: 695px;
-}
-
-
-

@@ -1,13 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 const Navbar = () => {
   function NavItem(props) {
     return (
       <div className="nav-item">
         <li>
-          {/* <a href="#" className="nav-button"> */}
           {props.item}
-          {/* </a> */}
         </li>
       </div>
     );
