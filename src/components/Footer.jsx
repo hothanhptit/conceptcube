@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="social-media-link">
             <SocialMedia icon={`/images/snsicon-01.png`} />
             <SocialMedia icon={`/images/snsicon-02.png`} />
-            <SocialMedia icon={`/images/snsicon-02.png`} />
+            <SocialMedia icon={`/images/snsicon-03.png`} />
         </div>
       </div>
     </div>

@@ -26,7 +26,9 @@ const BrandStory = () => {
         <div className="brand-main">
           <img src="./images/img.png" alt="" className="brand-main-img" />
           <div className="brand-text">
-            <h4 className="brand-text-title Text-Style-22">What Happened’s Brand story</h4>
+            <h4 className="brand-text-title Text-Style-22">
+              What Happened’s Brand story
+            </h4>
             <p className="brand-text-desc Text-Style-8">
               청춘이 있는 바이며, 말이다. 같지 노년에게서 어디 모래뿐일 무엇을
               풀이 옷을 봄바람이다. 새 천고에 놀이 내는 찾아 창공에 광야에서
@@ -40,6 +42,26 @@ const BrandStory = () => {
               see more
             </a>
           </div>
+        </div>
+      </div>
+
+      <div className="issue">
+        <div className="introduction-bg">
+          <h3 className="issue-title Text-Style-23">HAPPEND'S ISSUE</h3>
+          <p className="issue-desc Text-Style-9">
+            모바일에 최적화된 비디오를 단 몇 분 만에 제작해보세요. 디자이너가
+            아니더라도, 모든 팀에서
+          </p>
+          <p className="issue-desc-01 Text-Style-9">
+            다듬을 수 있습니다. 브랜드의 성공을 위한 첫 걸음을 내딛어보세요.
+            비디오를 단 몇 분 만에 제작해보세요.
+          </p>
+          <div className="btn-wrap-1">
+            <a href="#" className="issue-link">
+              SEE MORE
+            </a>
+          </div>
+          <img src="/images/Happend-issues.png" alt="img-main" />
         </div>
       </div>
 

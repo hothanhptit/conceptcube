@@ -175,4 +175,35 @@ const sample_data = [
       price: "2500 won"
     },
   ];
-  export default sample_data;
+  
+  const menuItems = [
+    {
+      title: "INTRODUCTION",
+      url: "#",
+      cName: "nav-links"
+    },
+    {
+      title: "SOLUTION",
+      url: "#",
+      cName: "nav-links"
+    },
+    {
+      title: "|",
+      url: "#",
+      cName: "Text-Style-7"
+    },
+    {
+      title: "LOGIN",
+      url: "#",
+      cName: "nav-links"
+    },
+    {
+      title: "APPLY FOR FREE USE",
+      url: "#",
+      cName: "nav-links"
+    }
+  ];
+  
+  export  {menuItems};
+  
+  export  {sample_data};

@@ -1,5 +1,5 @@
 import React from "react";
-import sample_data from "../sampledata";
+import {sample_data} from "../sampledata";
 
 const Product = () => {
   function Card(props) {
